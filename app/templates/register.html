@@ -5,7 +5,7 @@
 </head>
 <body>
     <h1>Register</h1>
-    <form method="POST" action="/register">
+    <form method="POST" action="{{url_for('register')}}">
         <!-- Include form fields for username, email, password, etc. -->
         <input type="text" name="username" placeholder="Username" required>
         <input type="email" name="email" placeholder="Email" required>

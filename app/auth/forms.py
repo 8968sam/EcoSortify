@@ -24,7 +24,7 @@ class RegistrationForm(FlaskForm):
                                                    Length(1, 64),
                                                    Regexp('^[A-Za-z]'
                                                    '[A-Za-z0-9_.]*$'), 0],
-                           'username must have only letters, numbers, 
+                           'username must have only letters, numbers,
                            'underscore or dots')
     password = PasswordField('Password', validators=[
         DataRequired(), EqualTo('password_2', message='Passwords must match.')
